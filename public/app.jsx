@@ -6,6 +6,12 @@ var Weather=require('Weather');
 var About=require('About');
 var example=require('example');
 
+//load foundation
+
+// Load foundation
+require('style!css!foundation-sites/dist/foundation.min.css')
+$(document).foundation();
+
 //debugger; this stop the program where it returns and use to find error and understand program
 ReactDOM.render(
   <Router history={hashHistory}>
