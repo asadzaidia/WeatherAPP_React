@@ -3,7 +3,17 @@ var About =React.createClass({
 	render:function(){
 
 	return(
-	<h3>About Component</h3>
+		<div className="text-center">
+	<h1 >About Component</h1>
+	<p> This is a Weather Application built on react!</p>
+	<p>Here are some tools I used:</p>
+	<ul>
+		<li className="text-center"><a href="https://facebook.github.io/react">React</a>
+	</li>
+	<li className="text-center"><a href="http://openweathermap.org">openweathermap</a></li>
+
+	</ul>
+</div>
 	);
 
 	}
