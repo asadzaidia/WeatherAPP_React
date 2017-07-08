@@ -12,7 +12,7 @@ var example=require('example');
 require('style!css!foundation-sites/dist/foundation.min.css')
 $(document).foundation();
 //App css
-require('style!css!applicationStyles')
+require('style!css!sass!applicationStyles')
 
 //debugger; this stop the program where it returns and use to find error and understand program
 ReactDOM.render(
