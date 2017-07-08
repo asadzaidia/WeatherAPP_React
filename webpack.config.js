@@ -7,7 +7,7 @@ module.exports = {
   ],
   externals: {
     jquery: 'jQuery',
-    foundation: 'Foundation'
+
   },
   plugins: [
      new webpack.ProvidePlugin({
