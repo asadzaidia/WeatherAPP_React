@@ -6,7 +6,7 @@ var example=React.createClass({
 
 	return(
 	<div>
-	<h2 className="text-center">Examples</h2>
+	<h2 className="text-center page-title">Examples</h2>
 
 	</div>
 	);
