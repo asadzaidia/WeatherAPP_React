@@ -1,38 +1,49 @@
 var React = require('react');
-var {Link,IndexLink} = require('react-router');//link builtin
+var{Link,IndexLink}=require('react-router');
 
 
-var Nav = React.createClass({
-  onSearch:function(e){
-    e.preventDefault();
-    alert('Not yet wired up!');
-  },
-  render: function () {
-    return (
-        <div className="top-bar">
-          <div className="top-bar-left">
-            <ul className="menu">
-              <li className="menu-text">React Weather</li>
-              <li>  <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Get Weather</IndexLink></li>
-              <li><Link to="about" activeClassName="active" activeStyle={{fontWeight:'bold'}}>About</Link></li>
-              <li><Link to="example" activeClassName="active" activeStyle={{fontWeight:'bold'}}>Example</Link></li>
 
-            </ul>
+var Navigation=React.createClass({
+  render:function(){
+  return(
+<div>
+    <div className="top-bar">
+      <div className="top-bar-right">
 
-          </div>
-          <div className="top-bar-right">
+        <ul class="menu">
+        <li className="menu-text">
+        <a href="https://github.com/asadzaidia" target="_blank"> -Asad Zaidi</a>
+        </li>
 
-            <form onSubmit={this.onSearch}>
-              <ul className="menu">
-                <li><input type="search" placeholder="Search Weather by City"/></li>
-                <li><input type="submit" className="button" value="Get Weather"/></li>
-              </ul>
-            </form>
-          </div>
+        </ul>
+      </div>
 
-        </div>
-    );
-  }
+      <div  className="top-bar-left">
+          <ul className="menu">
+
+              <li className="menu-text">
+                React Time App
+              </li>
+              <li>
+                <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
+              </li>
+
+              <li>
+
+                <Link to="/" activeClassName="active-link">CountDown</Link>
+              </li>
+
+          </ul>
+
+      </div>
+
+    </div>
+    </div>
+  );
+}
+
+
+
 });
 
-module.exports = Nav;
+module.exports=Navigation;
